@@ -12,7 +12,6 @@ import java.util.Optional;
 public interface UserMenuTransactionRepo extends JpaRepository<UserMenuTransaction, Long> {
 
     List<UserMenuTransaction> findByUserRole(UserRole userRole);
-
     List<UserMenuTransaction> findByUserRoleAndIsActiveTrue(UserRole userRole);
 
     boolean existsByUserRoleAndMenu(

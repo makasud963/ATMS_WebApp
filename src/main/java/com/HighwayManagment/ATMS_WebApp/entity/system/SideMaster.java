@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(
         name = "SideMaster",
-        schema = "Util",
         uniqueConstraints = {
                 @UniqueConstraint(columnNames = {"SideName"})
         }

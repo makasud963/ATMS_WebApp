@@ -4,7 +4,11 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "user_master")
+@Table(name = "user_master"
+        , uniqueConstraints = {
+        @UniqueConstraint(columnNames = "user_Name"),
+        @UniqueConstraint(columnNames = "user_email_id")
+})
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,8 +22,8 @@ public class UserMaster {
     private String userName;
     @Column(name = "user_email_id", unique = true, nullable = false)
     private String email;
-    private String password;
     private String role;
+    private String password;
     @Column(name = "is_active", nullable = false)
     private boolean active = true;
 }

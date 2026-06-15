@@ -17,10 +17,9 @@ public class AuditLog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private String username;
-
-    private String action;
-
+    private String tableName;
+    private String recordId;
+    private String actionType;
+    private Long sessionId;
     private LocalDateTime actionTime;
 }

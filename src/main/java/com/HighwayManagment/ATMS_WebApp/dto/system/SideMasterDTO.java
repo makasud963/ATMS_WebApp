@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SideMasterDTO {
-
     private Integer sideId;
     private String sideName;
     private String sidePhoneNumber;

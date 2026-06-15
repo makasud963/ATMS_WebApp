@@ -6,7 +6,6 @@ Spring Boot Backend Starter Project with:
 - Login API
 - JWT Authentication
 - Spring Security
-- MySQL Database
 - Audit Table
 - Log File Storage
 - Swagger Integration
